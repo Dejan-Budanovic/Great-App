@@ -1,0 +1,92 @@
+.creativity-article {
+    	display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    h2 {
+        font-size: 4.563rem;
+        font-weight: bold;
+        font-variant: small-caps;
+        text-align: center;
+        color: $main-color-3;
+        margin-bottom: 49px;
+    }
+    p {
+        &:first-of-type {
+            margin-bottom: 67px;
+        }
+        &:not(:first-of-type) {
+            font-size: 0.938rem;
+            line-height: 2.25rem;
+            text-align: left;
+            color: $main-color-2;
+            padding: 0px 70px 0px 80px;
+            
+        }
+    }
+    a {
+        margin-top: 79px;
+        margin-bottom: 130px;
+        
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .creativity-article {
+        h2 {
+            font-size: 3rem;
+            line-height: 1.433rem;
+            margin-bottom: 10px;
+        }
+        p {
+            &:first-of-type {
+                margin-bottom: 15px;
+            }
+            &:not(:first-of-type) {
+                font-size: 0.75rem;
+                line-height: 1rem;
+                text-align: center;
+                color: $main-color-2;
+                padding: 0px 10px 0px 10px;
+            }
+            &:last-of-type {
+                display: none
+            }
+        }
+        .read-more-btn {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .creativity-article {
+        h2 {
+            font-size: 2rem;
+            line-height: 1.433rem;
+            margin-bottom: 20px;
+        }
+        p {
+            &:first-of-type {
+                margin-bottom: 25px;
+            }
+            &:not(:first-of-type) {
+                font-size: 0.75rem;
+                line-height: 1.344rem;
+                text-align: center;
+                color: $main-color-2;
+                padding: 0px 20px 0px 20px;
+            }
+            &:last-of-type {
+                display: none
+            }
+        }
+        .read-more-btn {
+            margin-top: 45px;
+            margin-bottom: 58px;
+            
+        }
+    }
+}

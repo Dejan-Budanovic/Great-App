@@ -1,0 +1,179 @@
+header {
+  .header-top {
+    background-color: $main-color-5;
+    color: $main-color-1;
+    .header-top-flexbox {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .top-bar-info {
+        font-size: 0.875rem;
+        padding: 37px 0px;
+        img {
+          height: 0.875rem;
+          margin-right: 8px;
+        }
+      }
+      #location-info,
+      #phone-info,
+      #work-hours-info {
+        display: flex;
+      }
+      #phone-info {
+        margin-right: 22px;
+      }
+      #work-hours-info {
+        margin-right: 9px;
+      }
+      .info {
+        display: flex;
+      }
+    }
+  }
+
+  .header-bottom {
+    padding: 55px 0px 45px;
+    .header-bottom-flexbox {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      nav {
+        .hamburger {
+          display: none;
+        }
+        .nav-links {
+          display: flex;
+          justify-content: space-around;
+          .navBtn {
+            font-size: 0.875rem;
+            color: $main-nav-color;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-right: 2.5em;
+            &.active {
+              color: $main-color-3;
+            }
+            &:hover {
+              color: $main-color-3;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header-bottom-flexbox {
+    flex-wrap: wrap;
+    nav {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    .header-top {
+      display: none;
+    }
+    .header-bottom {
+      padding: 26px 0px 34px;
+      .header-bottom-flexbox {
+        display: block;
+        .logo {
+          display: block;
+          height: 20px;
+          width: 133px;
+          font-size: 1em;
+        }
+        nav {
+          position: relative;
+          display: block;
+          .hamburger {
+            position: absolute;
+            z-index: 2;
+            top: -20px;
+            right: 22px;
+            display: block;
+            cursor: pointer;
+            .line-wrapper {
+              position: relative;
+              width: 22px;
+              height: 22px;
+              .line {
+                position: absolute;
+                background-color: $main-color-2;
+                height: 4px;
+                width: 100%;
+                border-radius: 4px;
+                &:first-child {
+                  top: 1px;
+                }
+                &:nth-child(2) {
+                  top: 9px;
+                }
+                &:last-child {
+                  top: 17px;
+                }
+              }
+            }
+          }
+          .hamburger.open {
+            .line-wrapper {
+              .line {
+                width: 28px;
+                &:first-child {
+                  transform: rotateZ(45deg);
+                  top: 8px;
+                  left: -4px;
+                }
+                &:nth-child(2) {
+                  width: 0%;
+                }
+                &:last-child {
+                  transform: rotateZ(-45deg);
+                  top: 8px;
+                  left: -4px;
+                }
+              }
+            }
+          }
+
+          .nav-links {
+            display: none;
+          }
+          .nav-links.open {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            width: 100vw;
+            right: 0px;
+            left: -20px;
+            height: 100vh;
+            background-color: $main-color-5;
+            justify-content: space-around;
+            align-items: center;
+            padding-bottom: 50px;
+            .navBtn {
+              font-size: 1.375rem;
+              line-height: 1.875rem;
+              text-align: center;
+              margin-right: 0px;
+              &.active {
+                color: $main-color-1;
+              }
+
+              &:hover {
+                color: $main-color-1;
+              }
+            }
+          }
+        }
+      }
+    }
+    .header-bottom.open {
+      background-color: $main-color-5;
+    }
+  }
+}

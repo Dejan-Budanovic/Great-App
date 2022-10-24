@@ -1,0 +1,129 @@
+.intro-article {
+    background-color: $intro-bkg-color;
+    padding: 95px 0px 75px;
+    .intro-article-flexbox {
+        display: flex;
+        justify-content: space-between;
+        .carousel-wrapper {
+            .carousel {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .img-holder {
+                    .dots-holder {
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 46px;
+                        .dot {
+                            background-color: $slider-dots-color;
+                            height: 10px;
+                            width: 10px;
+                            border-radius: 50%;
+                            cursor: pointer;
+                            &:not(:last-child) {
+                                margin-right: 14px;
+                            }
+                            &.active, &:hover{
+                                background-color: $main-color-3;
+                            }
+                        }
+                    }
+                }
+                .arrow {
+                    cursor: pointer;
+                }
+            }
+        }
+        .intro-text-wrapper {
+            width: 50%;
+            padding: 110px 0px 65px;
+            h2 {
+                font-size: 3.125em;
+                font-weight: bold;
+                letter-spacing: 0.063em;
+                color: $heading-color-1;
+                text-transform: capitalize;
+                margin-bottom: 37px;
+            }
+            p {
+                color: $main-color-2;
+                font-size: 0.938em;
+                line-height: 1.563em;
+                letter-spacing: 0.009em;
+                margin-bottom: 49px;
+            }
+            .try-now-btn {
+                color: $main-color-1;
+                background-color: $intro-try-now-btn;
+                font-size: 1em;
+                font-weight: bold;
+                text-transform: capitalize;
+                text-align: center;
+                padding: 15px 30px;
+                border-radius: 50px;
+            }
+        }
+    }  
+}
+
+@media screen and (max-width: 768px) {
+    .intro-article {
+        padding: 0px 0px 0px;
+        border-top: 1px solid #F7DFD4;
+        .intro-article-flexbox {
+            display: flex;
+            flex-direction: column-reverse;
+            .carousel-wrapper {
+                .carousel {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .img-holder {
+                        padding: 0px 37px;
+                        .dots-holder {
+                            margin-top: 14px;
+                            .dot {
+                                height: 5px;
+                                width: 5px;
+                                &:not(:last-child) {
+                                    margin-right: 6px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .intro-text-wrapper {
+                width: 100%;
+                padding: 12px 0px 60px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                h2 {
+                    font-size: 1.875rem;
+                    line-height: 2.219rem;
+                    letter-spacing: 0.075rem;
+                    margin-bottom: 18px;
+                    text-align: center;
+                }
+                p {
+                    font-size: 0.75rem;
+                    line-height: 1.063rem;
+                    letter-spacing: 0.015rem;
+                    margin-bottom: 30px;
+                    text-align: center;
+                    padding: 0px 45px;
+                    span {
+                        display: none;
+                    }
+                }
+                .try-now-btn {
+                    font-size: 0.875rem;
+                    line-height: 1.294rem;
+                    padding: 11px 23px;
+                }
+            }
+        }  
+    }
+}

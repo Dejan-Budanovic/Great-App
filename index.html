@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Great App - Home</title>
+    <link rel="stylesheet" href="dist/main.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Header Top -->
+      <div class="header-top">
+        <!-- Header Top Container -->
+        <div class="container">
+          <!-- Header Top Flexbox -->
+          <div class="header-top-flexbox">
+            <div id="location-info" class="top-bar-info">
+              <img src="img/location.png" alt="location info" />
+              <p>Baker Street, London,21 - UK</p>
+            </div>
+            <div class="info">
+              <div id="phone-info" class="top-bar-info">
+                <img src="img/phone.png" alt="phone number" />
+                <p>+00123456789</p>
+              </div>
+              <div id="work-hours-info" class="top-bar-info">
+                <img src="img/work-hours.png" alt="work hours info" />
+                <p>Open Time: All weeks 8:00 - 12:00</p>
+              </div>
+            </div>
+          </div>
+          <!-- Header Top Flexbox END -->
+        </div>
+        <!-- Header Top Container END -->
+      </div>
+      <!-- Header Top END -->
+      <!-- Header Bottom -->
+      <div class="header-bottom">
+        <!-- Header Bottom Container -->
+        <div class="container">
+          <div class="header-bottom-flexbox">
+            <h1 class="logo">
+              <a href="#">
+                <img src="img/logo.png" alt="Great App logo" />
+              </a>
+            </h1>
+            <!-- Main Navigation -->
+            <nav>
+              <div class="hamburger">
+                <div class="line-wrapper">
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+                </div>
+              </div>
+              <ul class="nav-links list-reset">
+                <li><a class="navBtn" href="index.html">Home</a></li>
+                <li><a class="navBtn" href="about.html">About</a></li>
+                <li><a class="navBtn" href="services.html">Services</a></li>
+                <li><a class="navBtn" href="blog.html">Blog</a></li>
+                <li><a class="navBtn" href="contacts.html">Contacts</a></li>
+                <li><a class="orange-cta-btn" href="#">Request a quote</a></li>
+              </ul>
+            </nav>
+            <!-- Main Navigation END -->
+          </div>
+        </div>
+        <!-- Header Bottom Container END-->
+      </div>
+      <!-- Header Bottom END -->
+    </header>
+    <!-- Header END -->
+    <!-- MAIN -->
+    <main>
+      <!-- Intro Article -->
+      <article class="intro-article">
+        <!-- Intro Article Container -->
+        <div class="container">
+          <!-- Intro Article Flexbox -->
+          <div class="intro-article-flexbox">
+            <!-- Intro Text Wrapper -->
+            <div class="intro-text-wrapper">
+              <h2>Your business development</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor
+                <span
+                  >incididunt ut labore et dolore magna aliqua, ut enim ad minim
+                  veniam, quis nostrud exercitation</span
+                >
+              </p>
+              <a class="try-now-btn" href="#">try now</a>
+            </div>
+            <!-- Intro Text Wrapper END -->
+            <!-- Carousel -->
+            <div id="carousel-wrapper" class="carousel-wrapper">
+              <div class="carousel">
+                <div id="left" class="arrow" onclick="nextSlide(-1)">
+                  <img src="img/arrow-left.png" alt="" />
+                </div>
+                <div class="img-holder">
+                  <img id="imgSlide" src="img/slide1.png" alt="Left Arrow" />
+                  <div class="dots-holder">
+                    <div id="1" class="dot" onclick="showSlide(1)"></div>
+                    <div id="2" class="dot" onclick="showSlide(2)"></div>
+                    <div id="3" class="dot" onclick="showSlide(3)"></div>
+                    <div id="4" class="dot" onclick="showSlide(4)"></div>
+                  </div>
+                </div>
+                <div id="right" class="arrow" onclick="nextSlide(1)">
+                  <img src="img/arrow-right.png" alt="Right Arrow" />
+                </div>
+              </div>
+            </div>
+            <!-- Carousel END -->
+          </div>
+          <!-- Intro Article Flexbox -->
+        </div>
+        <!-- Intro Article Container END -->
+      </article>
+      <!-- Intro Article END -->
+      <!-- Our Company Article -->
+      <div class="our-company-article">
+        <!-- Our Company Article Container -->
+        <div class="container">
+          <!-- Our Company Article Flexbox -->
+          <div class="our-company-flexbox">
+            <div class="col-6">
+              <div class="our-company-img-wrapper">
+                <img src="img/vector-1.png" alt="vector 1" />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="our-company-text-wrapper">
+                <p class="sub-header">inovation. passion. creativity.</p>
+                <div class="our-company-text-container">
+                  <h2><span>our</span> company</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Quis ipsum su spendisse ultrices gravida. Risus
+                    commodo viverra maec enas accumsan lacus vel facilisis.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Quis ipsum su spendisse ultrices gravida.
+                  </p>
+                </div>
+                <a class="read-more-btn" href="#">read more</a>
+              </div>
+            </div>
+          </div>
+          <!-- Our Company Article Flexbox END -->
+        </div>
+        <!-- Our Company Article Container END -->
+      </div>
+      <!-- Our Company Article END -->
+      <!-- Our Work Article -->
+      <div class="our-work-article">
+        <!-- Our Work Article Container -->
+        <div class="container">
+          <!-- Our Work Article Flexbox -->
+          <div class="our-work-article-flexbox">
+            <h2>Our work is <span>more than research</span></h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut
+              <span
+                >labore et <br />
+                dolore magna aliqua. Ut enim ad minim veniam.</span
+              >
+            </p>
+            <!-- Our Work Article Points Flexbox -->
+            <div class="our-work-article-points-flexbox">
+              <div class="point-flexbox">
+                <div class="img-holder">
+                  <img src="img/target-audience.png" alt="target audience" />
+                </div>
+                <h4>awesome & creative</h4>
+                <p>
+                  Get your blood tests delivered at home collect a sample from
+                  the news your blood tests.
+                </p>
+              </div>
+              <div class="point-flexbox">
+                <div class="img-holder">
+                  <img
+                    id="megaphone-img"
+                    src="img/megaphone.png"
+                    alt="megaphone"
+                  />
+                  <div id="circle1" class="circle"></div>
+                </div>
+                <h4>developement field</h4>
+                <p>
+                  Get your blood tests delivered at home collect a sample from
+                  the news your blood tests.
+                </p>
+              </div>
+              <div class="point-flexbox">
+                <div class="img-holder">
+                  <img id="search-img" src="img/search.png" alt="search" />
+                  <div id="circle2" class="circle"></div>
+                </div>
+                <h4>awesome & creative</h4>
+                <p>
+                  Get your blood tests delivered at home collect a sample from
+                  the news your blood tests.
+                </p>
+              </div>
+            </div>
+            <!-- Our Work Article Points Flexbox END -->
+          </div>
+          <!-- Our Work Article Flexbox END -->
+        </div>
+        <!-- Our Work Article Container END -->
+      </div>
+      <!-- Our Work Article END -->
+      <!-- Our History Article -->
+      <div class="our-history-article">
+        <!-- Our History Article Container -->
+        <div class="container">
+          <!-- Our History Article Flexbox -->
+          <div class="our-history-flexbox">
+            <div class="col-6">
+              <div class="our-history-img-wrapper">
+                <img src="img/vector-2.png" alt="vector 2" />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="our-history-text-wrapper">
+                <h2>our <span>history</span></h2>
+                <p class="sub-header">elevate your financial performances</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Quis ipsum su spendisse ultrices gravida. Risus commodo
+                  viverra maec enas accumsan lacus vel facilisis. Lorem ipsum
+                  dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor.
+                </p>
+                <a class="read-more-btn" href="#">read more</a>
+              </div>
+            </div>
+          </div>
+          <!-- Our History Article Flexbox END -->
+        </div>
+        <!-- Our History Article Container END -->
+      </div>
+      <!-- Our History Article END -->
+      <!-- Creativity Article -->
+      <div class="container">
+        <article class="creativity-article">
+          <h2>creativity</h2>
+          <p class="sub-header">but not only for your performances</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+            ipsum su spendisse ultrices gravida. Risus commodo viverra maec enas
+            accumsan lacus vel facilisis.
+          </p>
+          <p>
+            <br />Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Quis ipsum su spendisse ultrices gravida. Risus
+            commodo viverra maec enas accumsan lacus vel facilisis. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+          </p>
+          <a class="read-more-btn" href="#">read more</a>
+        </article>
+      </div>
+      <!-- Creativity Article END -->
+      <!-- Computer Article -->
+      <div class="computer-article">
+        <!-- Computer Article Container -->
+        <div class="container">
+          <div class="computer-article-flexbox">
+            <div class="computer-container">
+              <div class="computer-heading-wrapper">
+                <h3>what we<br /><span>offer</span></h3>
+              </div>
+              <div class="computer-wrapper">
+                <div class="computer-img-wrapper">
+                  <img src="img/computer.png" alt="computer" />
+                  <div class="screen"></div>
+                </div>
+                <div class="computer-text-wrapper">
+                  <div class="computer-text">
+                    <h4>Why we best Consulting<br />office in London?</h4>
+                    <p>
+                      Rapid solutions to the most complex business challenges
+                      with cooperative process-driven.
+                    </p>
+                    <br />
+                    <p class="computer-quote">
+                      We are an elite team of consultants whose mission is
+                      maximize stakeholder value. From roadmap planning and
+                      solution implementation, to maintenance and support.
+                    </p>
+                    <img
+                      class="computer-signature"
+                      src="img/signature.png"
+                      alt="signature"
+                    />
+                    <a class="orange-cta-btn" href="#">see all services</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Computer Article Container END-->
+      </div>
+      <!-- Computer Article END -->
+      <!-- Numbers Article -->
+      <div class="numbers-article">
+        <!-- Numbers Article Container -->
+        <div class="container">
+          <!-- Numbers Flexbox -->
+          <div class="numbers-flexbox">
+            <div class="numbers-wrapper">
+              <p>
+                <span>7890</span> <br />
+                coffee cups
+              </p>
+            </div>
+            <div class="numbers-wrapper">
+              <p>
+                <span>1m</span> <br />
+                subscribers
+              </p>
+            </div>
+            <div class="numbers-wrapper">
+              <p>
+                <span>1509</span> <br />
+                customers
+              </p>
+            </div>
+            <div class="numbers-wrapper">
+              <p>
+                <span>5972</span> <br />
+                purchases
+              </p>
+            </div>
+          </div>
+          <!-- Numbers Flexbox END -->
+        </div>
+        <!-- Numbers Article Container END -->
+      </div>
+      <!-- Numbers Article END -->
+      <!-- CTA Article -->
+      <div class="cta-article">
+        <!-- CTA Article Container -->
+        <div class="container">
+          <div class="cta-article-flexbox">
+            <div class="cta-text-wrapper">
+              <p>Looking for a First-Class Business Plan Consultant?</p>
+            </div>
+            <a class="cta-article-btn" href="#">start now</a>
+          </div>
+        </div>
+        <!-- CTA Article Container -->
+      </div>
+      <!-- CTA Article -->
+      <!-- Request A Demo Article -->
+      <div class="request-demo-article">
+        <!-- Request A Demo Article Container -->
+        <div class="container">
+          <!-- Request A Demo Article Flexbox -->
+          <div class="request-demo-article-flexbox">
+            <div class="col-6">
+              <div class="text-wrapper">
+                <h3>Ready <span>to start?</span></h3>
+                <p>Get a free financial plan</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="input-wrapper">
+                <form action="submit">
+                  <input type="email" placeholder="Your email" />
+                  <button type="submit">get started</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Request A Demo Article Flexbox -->
+        </div>
+        <!-- Request A Demo Article Container END -->
+      </div>
+      <!-- Request A Demo Article END -->
+    </main>
+    <!-- MAIN END -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <!-- Footer Top -->
+      <div class="footer-top">
+        <!-- Footer Top Container -->
+        <div class="container">
+          <!-- Footer Top Flexbox END -->
+          <div class="footer-top-flexbox">
+            <!--Footer Contact Info -->
+            <div class="col-3">
+              <div class="company-info">
+                <div class="footer-top-logo-wrapper">
+                  <img src="img/logo.png" alt="Great App logo" />
+                </div>
+                <div class="footer-top-phone-num">
+                  <a href="tel:+00123456789">Tel: (00) 123456789</a>
+                  <br />
+                  <a href="tel:+00123456789">Fax: (00) 123456789</a>
+                </div>
+                <a href="mailto:info@yourdomain.com">info@yourdomain.com</a>
+                <!-- Social Networks -->
+                <div class="social-nav">
+                  <ul class="list-reset">
+                    <li>
+                      <a href="www.linkedin.com"
+                        ><img src="img/linkedin.png" alt="LinkedIn"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="www.facebook.com"
+                        ><img src="img/facebook.png" alt="Facebook"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="www.twitter.com"
+                        ><img src="img/twitter.png" alt="Twitter"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="www.github.com"
+                        ><img src="img/github.png" alt="GitHub"
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Social Networks END -->
+              </div>
+            </div>
+            <!--Footer Contact Info END -->
+            <!-- Footer Top Navigation -->
+            <div class="col-3">
+              <div class="info-column">
+                <ul class="list-reset">
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Our Team</a></li>
+                  <li><a href="#">Developers</a></li>
+                  <li><a href="#">CRM Solutions</a></li>
+                  <li><a href="#">Online Help</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="info-column">
+                <ul class="list-reset">
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">How We Help</a></li>
+                  <li><a href="#">Partners</a></li>
+                  <li><a href="#">Where Are We</a></li>
+                  <li><a href="#">History</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="info-column">
+                <ul class="list-reset">
+                  <li><a href="#">Support</a></li>
+                  <li><a href="#">Privacy Politics</a></li>
+                  <li><a href="#">Support 24/7</a></li>
+                  <li><a href="#">Get A Quote</a></li>
+                  <li><a href="#">Work With Us</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- Footer Top Navigation END -->
+          </div>
+          <!-- Footer Top Flexbox END -->
+        </div>
+        <!-- Footer Top Container END -->
+      </div>
+      <!-- Footer Top END -->
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <!-- Footer Bottom Container -->
+        <div class="container">
+          <!-- Footer Bottom Flexbox -->
+          <div class="footer-bottom-flexbox">
+            <!-- Footer Bottom Copyright -->
+            <div class="footer-btm-small">
+              <small> &copy; 2020 you company copyright </small>
+            </div>
+            <!-- Footer Bottom Copyright -->
+            <!-- Footer Bottom Navigation -->
+            <div class="footer-btm-nav">
+              <ul class="list-reset">
+                <li>
+                  <small><a href="#">privacy</a></small>
+                </li>
+                <li>
+                  <small><a href="#">accessibility</a></small>
+                </li>
+                <li>
+                  <small><a href="#">terms</a></small>
+                </li>
+              </ul>
+            </div>
+            <!-- Footer Bottom Navigation END -->
+          </div>
+          <!-- Footer Bottom Flexbox END -->
+        </div>
+        <!-- Footer Bottom Container -->
+      </div>
+      <!-- Footer Bottom END -->
+    </footer>
+    <!-- FOOTER END -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

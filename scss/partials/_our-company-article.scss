@@ -1,0 +1,144 @@
+.our-company-article {
+    padding: 182px 0px 160px;
+    .our-company-flexbox {
+        display: flex;
+        justify-content: space-between;
+        .col-6 {
+            width: 50%;
+        }
+        .our-company-img-wrapper {
+            margin-left: -7vw;
+        }
+        .our-company-text-wrapper {
+            padding: 3.125vw 0vw 0vw 4.3vw;
+            .our-company-text-container {
+                padding-bottom: 40px;
+                h2 {
+                    font-size: 5.53em;
+                    font-weight: bold;
+                    font-variant: small-caps;
+                    color: $heading-color-1;
+                    letter-spacing: -0.091rem;
+                    text-align: center;
+                    span {
+                        color: $main-color-3;
+                    }
+                }
+                p {
+                    font-size: 0.938rem;
+                    color: $main-color-2;
+                    margin-right: -11px;
+                    line-height: 1.563em;
+                }
+            }
+            .read-more-btn {
+                margin: 40px 0px 0px 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .our-company-article {
+        padding: 90px 0px 80px;
+        .our-company-flexbox {
+            
+            .our-company-img-wrapper {
+                margin-left: 0vw;
+            }
+            .our-company-text-wrapper {
+                padding: 3.125vw 0vw 0vw 4.3vw;
+                .our-company-text-container {
+                    padding-bottom: 40px;
+                    h2 {
+                        font-size: 3em;
+                        font-weight: bold;
+                        font-variant: small-caps;
+                        color: $heading-color-1;
+                        letter-spacing: -0.091rem;
+                        text-align: center;
+                        span {
+                            color: $main-color-3;
+                        }
+                    }
+                    p {
+                        font-size: 0.938rem;
+                        color: $main-color-2;
+                        margin-right: -11px;
+                        line-height: 1.563em;
+                    }
+                }
+                .read-more-btn {
+                    margin: 40px 0px 0px 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .our-company-article {
+        padding: 90px 0px 80px;
+        .our-company-flexbox {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .col-6 {
+            width: 100%;
+            }
+            .our-company-img-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .our-company-text-wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 3.125vw 0vw 0vw 0vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .our-company-article {
+        padding: 54px 0px 67px;
+        .our-company-flexbox {
+            .our-company-img-wrapper {
+                margin-left: 0px;
+                padding: 0px 94px;
+            }
+            .our-company-text-wrapper {
+                padding: 20px 0px 0px 0px;
+                .sub-header {
+                    font-size: 1.25rem;
+                    line-height: 1.433rem;
+                    margin-bottom: 8px;
+                }
+                .our-company-text-container {
+                    padding-bottom: 30px;
+                    h2 {
+                        font-size: 2rem;
+                        line-height: 1.433rem;
+                        letter-spacing: -0.08rem;
+                        margin-bottom: 25px;
+                    }
+                    p {
+                        font-size: 0.75rem;
+                        margin: 0px 0px;
+                        line-height: 1rem;
+                        text-align: center;
+                        &:last-of-type {
+                            display: none;
+                        }
+                    }
+                }
+                .read-more-btn {
+                    margin: 0px 0px 0px 0px;
+                }
+            }
+        }
+    }
+}

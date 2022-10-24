@@ -1,0 +1,136 @@
+.our-history-article {
+    padding: 182px 0px 160px;
+    .our-history-flexbox {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        .col-6 {
+            width: 50%;
+        }
+        .our-history-img-wrapper {
+            padding: 0px 35px 0px 30px;
+        }
+        .our-history-text-wrapper {
+            padding-right: 110px;
+                h2 {
+                    font-size: 4.563rem;
+                    font-weight: bold;
+                    font-variant: small-caps;
+                    color: $heading-color-1;
+                    letter-spacing: -0.091rem;
+                    text-align: center;
+                    span {
+                        color: $main-color-3;
+                    }
+                }
+                p {
+                    &:first-of-type {
+                        margin-bottom: 45px;
+                    }
+                    &:not(:first-of-type) {
+                        font-size: 0.938rem;
+                        color: $main-color-2;
+                        margin-right: -11px;
+                        line-height: 1.563em;
+                        margin-bottom: 40px;
+                    }
+                }
+            }
+            .read-more-btn {
+                margin: 0px 0px 0px 20px;
+            }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .our-history-article {
+        padding: 90px 0px 80px;
+        .our-history-flexbox {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            .col-6 {
+                width: 50%;
+            }
+            .our-history-img-wrapper {
+                padding: 0px 10px 0px 10px;
+            }
+            .our-history-text-wrapper {
+                padding-right: 30px;
+                    h2 {
+                        font-size: 3rem;
+                        font-weight: bold;
+                        font-variant: small-caps;
+                        color: $heading-color-1;
+                        letter-spacing: -0.091rem;
+                        text-align: center;
+                        span {
+                            color: $main-color-3;
+                        }
+                    }
+                    p {
+                        &:first-of-type {
+                            margin-bottom: 25px;
+                        }
+                        &:not(:first-of-type) {
+                            font-size: 0.938rem;
+                            color: $main-color-2;
+                            margin-right: 0px;
+                            line-height: 1.563em;
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+                .read-more-btn {
+                    margin: 0px 0px 0px 20px;
+                }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .our-history-article {
+        padding: 0px;
+        .our-history-flexbox {
+            display: flex;
+            justify-content: center;
+            flex-direction: row-reverse;
+            align-items: center;
+            flex-direction: column;
+            .col-6 {
+                width: 100%;
+            }
+            .our-history-img-wrapper {
+                padding: 0px 50px 0px 50px;
+                margin-bottom: 55px;
+            }
+            .our-history-text-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                    padding: 0px;
+                    h2 {
+                        font-size: 2rem;
+                        line-height: 1.433rem;
+                        letter-spacing: -0.08rem;
+                        margin-bottom: 25px;
+                    }
+                    p {
+                        &:first-of-type {
+                            margin-bottom: 20px;
+                        }
+                        &:not(:first-of-type) {
+                            font-size: 0.75rem;
+                            line-height: 1.188rem;
+                            text-align: center;
+                            margin-right: 0px;
+                        }
+                    }
+                }
+                .read-more-btn {
+                    margin-bottom: 60px;
+                }
+        }
+    }
+}

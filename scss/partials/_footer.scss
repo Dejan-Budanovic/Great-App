@@ -1,0 +1,156 @@
+footer {
+    
+    a {
+        color: $main-color-1;
+        font-weight: bold;
+    }
+
+    .footer-top {
+        background-color: $main-color-5;
+        padding: 133px 0px 140px;
+        font-size: 1em;
+        .footer-top-flexbox {
+            display: flex;
+            justify-content: space-between;
+            .col-3 {
+                .company-info {
+                    .footer-top-logo-wrapper {
+                        margin-top: 22px;
+                        height: 40px;
+                    }
+                    .footer-top-phone-num {
+                        margin: 52px 0px 40px; 
+                        line-height: 1.875em;
+                    }
+                    .social-nav {
+                        margin-top: 50px;
+                       ul {
+                        display: flex;
+                        li {
+                            display: block;
+                            height: 1em;
+                            width: 1em;
+                            &:not(:last-of-type) {
+                                margin-right: 30px;
+                            }
+                        }
+                       }
+                    }
+    
+                }
+                .info-column {
+                    a {
+                        text-align: left;
+                        text-transform: capitalize;
+                        line-height: 3.125em;
+                    }
+                }
+            }
+            
+        }
+    }
+
+    .footer-bottom {
+        background-color: $footer-bottom-bkg;
+        color: $main-color-1;
+        font-size: 0.875em;
+        text-transform: capitalize;
+        .footer-bottom-flexbox {
+            height: 88px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .footer-btm-nav {
+                margin-right: 49px;
+                ul {
+                    display: flex;
+                    li {
+                        &:not(:last-child) {
+                            margin-right: 36px;
+                        }
+                    }
+                }
+            }
+            .footer-btm-small {
+                font-weight: bold;
+                margin-right: 4px;
+            }
+        }
+    }
+}
+
+@media screen  and (max-width: 768px) {
+    footer {
+        .footer-top {
+            font-size: 0.875rem;
+            padding: 50px 0px 0px;
+            .footer-top-flexbox {
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                .col-3 {
+                    .company-info {
+                        text-align: center;
+                        .footer-top-logo-wrapper {
+                            margin: 0 auto;
+                            height: 26px;
+                            width: 178px
+                        }
+                        .footer-top-phone-num {
+                            margin: 20px 0px 10px; 
+                            line-height: 1.875em;
+                        }
+                        .social-nav {
+                            margin-top: 29px;
+                            margin-bottom: 40px;
+                           ul {
+                            display: flex;
+                            justify-content: center;
+                            li {
+                                display: block;
+                                width: 20px;
+                                height: 20px;
+                                &:not(:last-of-type) {
+                                    margin-right: 34px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .info-column {
+                        margin-bottom: 50px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        ul {
+                            li {
+                                text-align: center;
+                                a {
+                                    line-height: 1.469rem;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+        .footer-bottom {
+            font-size: 0.75em;
+            font-weight: normal;
+            .footer-bottom-flexbox {
+                flex-direction: column-reverse;
+                height: 90px;
+                justify-content: space-between;
+                align-items: center;
+                .footer-btm-nav {
+                    margin: 21px 0px 0px;
+                }
+                .footer-btm-small {
+                    margin: 0px 0px 19px;
+                }
+            }
+        }
+    }
+}

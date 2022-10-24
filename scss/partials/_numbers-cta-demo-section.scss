@@ -1,0 +1,321 @@
+.numbers-article {
+    background-color: $numbers-bkg;
+    color: $main-color-2;
+    font-weight: 300;
+    text-align: center;
+    font-size: 0.875em;
+    text-transform: uppercase;
+    letter-spacing: 0.175em;
+    padding: 112px 0 105px;
+    span {
+        font-size: 3em;
+        letter-spacing: 0.75rem;
+    }
+    .numbers-flexbox {
+        display: flex;
+        align-items: center;
+        justify-content: space-around
+
+    }
+}
+
+.cta-article {
+    background-color: $cta-bkg;
+    color: $main-color-1;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 24px 0 17px;
+    .cta-article-flexbox {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .cta-article-btn {
+        font-size: 0.938em;
+        text-transform: capitalize;
+        color: $cta-btn-color;
+        background-color: $main-color-1;
+        padding: 17px 31px;
+        border-radius: 5px;
+    }
+}
+
+.request-demo-article {
+    background-color: $demo-bkg;
+    color: $demo-text-color;
+    padding: 174px 119px;
+    .request-demo-article-flexbox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .text-wrapper {
+            margin-left: 50px;
+            h3 {
+                font-size: 3em;
+                font-weight: lighter;
+                margin-bottom: 30px;
+                span {
+                    font-weight: bold;
+                }
+            }
+            p {
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+        }
+        .input-wrapper {
+            margin-right: -106px;
+            display: flex;
+            padding: 25px 57px 27px 37px;
+            border-radius: 5px;
+            
+            background-color: $demo-input-bkg-color;
+            form {
+                input {
+                    background-color: $demo-input-bkg-color;
+                    border: none;
+                    color: $demo-input-placeholder-color;
+                    font-size: 1.438em;
+                    line-height: 1;
+                    font-weight: bold;
+                    padding: 0 12px;
+                    &::placeholder {
+                        color: $demo-input-placeholder-color;
+                    }
+                    &:focus {
+                        outline: 1px solid $demo-input-placeholder-color;
+                    }
+                }
+                button {
+                    color: $demo-input-submit-cta-btn;
+                    font-size: 0.938em;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    background-color: transparent;
+                    padding: 0 12px;
+                    border: none;
+                    cursor: pointer;
+                    &:focus {
+                        outline: 1px solid $demo-input-placeholder-color;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .numbers-article {
+        font-size: 0.875em;
+        line-height: 1.2rem;
+        letter-spacing: 0.2rem;
+        padding: 50px 0 15px;
+        span {
+            font-size: 1.875rem;
+            letter-spacing: 0.5rem;
+        }
+        .numbers-flexbox {
+            .numbers-wrapper {
+                margin-bottom: 50px;
+            }
+        }
+    }
+    
+    .cta-article {
+        background-color: $cta-bkg;
+        color: $main-color-1;
+        font-size: 0.875rem;
+        font-weight: bold;
+        padding: 24px 0 23px;
+        .cta-text-wrapper {
+            padding: 0px 30px;
+            text-align: center;
+            margin-bottom: 0px;
+        }
+        .cta-article-btn {
+            font-size: 1rem;
+            color: $cta-btn-color;
+            background-color: $main-color-1;
+            padding: 16px 36px;
+            border-radius: 5px;
+        }
+    }
+    
+    .request-demo-article {
+        background-color: $demo-bkg;
+        color: $demo-text-color;
+        padding: 40px 0px 40px;
+        .request-demo-article-flexbox {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .text-wrapper {
+                    margin: 0px 0px 0px 0px;
+                h3 {
+                    font-size: 1.75rem;
+                    font-weight: lighter;
+                    margin-bottom: 6px;
+                    text-align: center;
+                    span {
+                        font-weight: bold;
+                    }
+                }
+                p {
+                    font-size: 0.875rem;
+                    font-weight: bold;
+                    text-align: center;
+                }
+            }
+            .input-wrapper {
+                display: flex;
+                justify-content: space-between;
+                margin: 0;
+                width: 60vw;
+                padding: 14px 17px 14px 16px;
+                border-radius: 5px;
+                background-color: $main-color-1;
+                border: 1px solid #e2e2e2;
+                form {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    input {
+                        background-color: $main-color-1;
+                        color: $demo-input-placeholder-color;
+                        font-size: 1em;
+                        line-height: 1;
+                        font-weight: bold;
+
+                        padding: 0px;
+                        
+                        &::placeholder {
+                            color: $demo-input-placeholder-color;
+                        }
+                        &:focus {
+                            outline: 1px solid $demo-input-placeholder-color;
+                        }
+                    }
+                    button {
+
+                        color: $demo-input-submit-cta-btn;
+                        font-size: 0.75rem;
+                        padding: 0px;
+                        border: none;
+                        cursor: pointer;
+                        &:focus {
+                            outline: 1px solid $demo-input-placeholder-color;
+                        }
+                    }
+                }
+            }
+        }
+    
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .numbers-article {
+        .numbers-flexbox {
+            flex-direction: column;
+            .numbers-wrapper {
+                margin-bottom: 50px;
+            }
+        }
+    }
+    
+    .cta-article {
+        background-color: $cta-bkg;
+        color: $main-color-1;
+        font-size: 0.875rem;
+        font-weight: bold;
+        padding: 24px 0 23px;
+        .cta-article-flexbox {
+            
+            flex-direction: column;
+        }
+        .cta-text-wrapper {
+            padding: 0px 70px;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .cta-article-btn {
+            font-size: 1rem;
+            color: $cta-btn-color;
+            background-color: $main-color-1;
+            padding: 16px 36px;
+            border-radius: 5px;
+        }
+    }
+    
+    .request-demo-article {
+        background-color: $demo-bkg;
+        color: $demo-text-color;
+        padding: 40px 0px 80px;
+        .request-demo-article-flexbox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .text-wrapper {
+                    margin: 0px 0px 40px 0px;
+                h3 {
+                    font-size: 1.75rem;
+                    font-weight: lighter;
+                    margin-bottom: 6px;
+                    span {
+                        font-weight: bold;
+                    }
+                }
+                p {
+                    font-size: 0.875rem;
+                    font-weight: bold;
+                    text-align: center;
+                }
+            }
+            .input-wrapper {
+                display: flex;
+                justify-content: space-between;
+                margin: 0;
+                width: 90vw;
+                padding: 14px 17px 14px 16px;
+                border-radius: 5px;
+                background-color: $main-color-1;
+                border: 1px solid #e2e2e2;
+                form {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    input {
+                        background-color: $main-color-1;
+                        color: $demo-input-placeholder-color;
+                        font-size: 1em;
+                        line-height: 1;
+                        font-weight: bold;
+
+                        padding: 0px;
+                        
+                        &::placeholder {
+                            color: $demo-input-placeholder-color;
+                        }
+                        &:focus {
+                            outline: 1px solid $demo-input-placeholder-color;
+                        }
+                    }
+                    button {
+
+                        color: $demo-input-submit-cta-btn;
+                        font-size: 0.75rem;
+                        padding: 0px;
+                        border: none;
+                        cursor: pointer;
+                        &:focus {
+                            outline: 1px solid $demo-input-placeholder-color;
+                        }
+                    }
+                }
+            }
+        }
+    
+    }
+}
